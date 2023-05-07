@@ -66,6 +66,7 @@ public class button extends JFrame {
                     FileWriter fw = new FileWriter(file.getAbsoluteFile());
                     BufferedWriter bw = new BufferedWriter(fw);
                     bw.write(text);
+			bw.newLine(); // Con este podemos agregar una nueva linea
                     bw.close();
                 } catch (IOException ex) {
                     ex.printStackTrace();
